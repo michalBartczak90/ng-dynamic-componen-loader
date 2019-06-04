@@ -13,7 +13,7 @@ import { DynamicComponentLoaderService } from 'app/utils/dynamic-component-loade
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
-  @ViewChild('messageOutlet', {read: ViewContainerRef}) messageOutlet: ViewContainerRef;
+  @ViewChild('messageOutlet', {read: ViewContainerRef, static: false}) messageOutlet: ViewContainerRef;
 
   constructor(
     private dynamicComponentLoaderService: DynamicComponentLoaderService
